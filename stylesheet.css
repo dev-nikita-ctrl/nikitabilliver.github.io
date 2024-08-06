@@ -1,22 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
-    background-color: #333;
+    display: flex;
+    align-items: center;
+    background-color: #370451;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
+}
+
+header img.logo {
+    height: 200px;
+    margin-right: 20px; 
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background-color: #444;
+    background-color: #035f51;
     margin: 0;
 }
 
@@ -31,76 +53,48 @@ nav ul li a {
     display: inline-block;
 }
 
-section {
+main {
+    flex: 1;
     padding: 20px;
+}
+
+.content-section {
     margin: 20px;
     background-color: white;
+    padding: 20px; /* Added padding for box model requirement */
+    border: 1px solid #ddd; /* Added border for box model requirement */
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
 
 footer {
-    text-align: bottom;
+    text-align: center;
     padding: 10px 0;
-    background-color: #333;
+    background-color: #035f51;
     color: white;
-    position: absolute;
+}
+
+table {
     width: 100%;
-    bottom: 0;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a.external-link {
+    color: blue; /* Default color for links */
+}
+
+a.external-link:hover {
+    color: red; /* Change color on hover */
 }
